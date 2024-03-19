@@ -1,0 +1,62 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+background-color: #18181a;
+color: white;
+
+}
+
+#heading {
+    text-align: center;
+    }
+#body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.displayPage {
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+
+}
+
+#svgmap svg {
+    width: 100%;
+    height: 100%
+}
+
+#data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#data p {
+    display: inline-block;
+    color: darkgreen;
+    
+    
+}
+svg path {
+    cursor: pointer;
+}
+svg path:hover{
+    fill:grey
+}
+
+.Selected {
+    fill:darkgreen
+}
+
+#tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
